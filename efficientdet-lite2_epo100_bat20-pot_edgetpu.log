@@ -1,0 +1,17 @@
+Edge TPU Compiler version 16.0.384591198
+Input: efficientdet-lite3-pot.tflite
+Output: efficientdet-lite3-pot_edgetpu.tflite
+
+Operator                       Count      Status
+
+MAX_POOL_2D                    22         Mapped to Edge TPU
+ADD                            69         Mapped to Edge TPU
+CUSTOM                         1          Operation is working on an unsupported data type
+CONCATENATION                  2          Mapped to Edge TPU
+RESHAPE                        10         Mapped to Edge TPU
+RESIZE_NEAREST_NEIGHBOR        20         Mapped to Edge TPU
+LOGISTIC                       1          Mapped to Edge TPU
+CONV_2D                        128        Mapped to Edge TPU
+DEPTHWISE_CONV_2D              101        Mapped to Edge TPU
+QUANTIZE                       1          Mapped to Edge TPU
+DEQUANTIZE                     2          Operation is working on an unsupported data type
